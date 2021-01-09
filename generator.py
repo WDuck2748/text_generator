@@ -64,5 +64,9 @@ def generate_text(imput_text):
                 text = enc.decode(out[i])
     return text
 
-text = generate_text("I am very angry!")
+text = generate_text("How are you doing today?")
 print(text)
+
+WriteTxtFile = open("write-demo.txt", "w")
+WriteTxtFile.write(text)
+WriteTxtFile.close()
